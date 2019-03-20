@@ -1,6 +1,7 @@
-// Basically, what it does is, selects the right swipe button class name, and keeps clicking
+// Step 1: Copy and paste this line into the Console and hit Enter
+// tldr; using jquery, we're selecting the like button
+var swype  = $("[aria-label='Like']");
 
-func = setInterval(function() {
- var swype  = document.getElementsByClassName("recsGamepad__button--like")
-  swype[0].click()
-}, 1000)
+// Step 2: Copy and paste this line into the Console and hit Enter
+// tldr; using click(), we click the button--750 is the time (in ms) between swipes -- feel free to adjust this
+func = setInterval(function() { swype.click() }, 750)
