@@ -1,6 +1,5 @@
 // Basically, what it does is, selects the right swipe button class name, and keeps clicking
-
-func = setInterval(function() {
- var swype  = document.getElementsByClassName("recsGamepad__button--like")
-  swype[0].click()
+setInterval(function() {
+  const swype  = document.querySelector(".recsGamepad__button[aria-label=Like]");
+  swype.click();
 }, 1000)
